@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%; }
+
+nav {
+  display: flex;
+  justify-content: space-between; }
+
+.navlist {
+  list-style: none;
+  padding: 0;
+  display: flex; }
+  .navlist li {
+    padding: 0 0.5rem; }
+  .navlist a {
+    color: #f15b2a;
+    text-decoration: none; }
+    .navlist a:hover {
+      color: #4c7deb; }
+
+form {
+  margin: 3rem auto;
+  width: 400px; }
+  form label,
+  form input {
+    display: block; }
+  form label {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem; }
+  form input {
+    width: 100%; }
+  form button {
+    display: block;
+    background-color: #f15b2a;
+    color: #fff;
+    border: none;
+    font-size: 1rem; }
+
+.results {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem; }

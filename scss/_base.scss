@@ -1,0 +1,15 @@
+html {
+  @include font($font-stack, 16px, normal);
+  background-color: #fefefe;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 600;
+  margin: 0;
+}

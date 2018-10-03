@@ -5,14 +5,17 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Movie Search</title>
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
 
 <body>
   <header>
     <nav>
-      <h1>MovieBox</h1>
+      <div class="nav-container">
+        <h1>MovieBox</h1>
+        <button class="nav-toggle">Menu</button>
+      </div>
       <ul class="navlist">
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
@@ -21,8 +24,10 @@
     </nav>
     <form action="">
       <label for="search">Find a Movie</label>
-      <input type="text" id="search">
-      <button type="submit">Search</button>
+      <div class="search-wrapper">
+        <input type="text" id="search">
+        <button type="submit">Search</button>
+      </div>
     </form>
   </header>
   <section>
@@ -30,39 +35,52 @@
     <ul class="results">
       <li>
         <img src="img/0.jpg" alt="Godzilla">
-        <h3>Movie Title</h3>
-        <p>Godzilla</p>
+        <div>
+          <h3>Movie Title</h3>
+          <p>Godzilla</p>
+        </div>
       </li>
       <li>
         <img src="img/0.jpg" alt="Godzilla">
-        <h3>Movie Title</h3>
-        <p>Godzilla</p>
+        <div>
+          <h3>Movie Title</h3>
+          <p>Godzilla</p>
+        </div>
       </li>
       <li>
         <img src="img/0.jpg" alt="Godzilla">
-        <h3>Movie Title</h3>
-        <p>Godzilla</p>
+        <div>
+          <h3>Movie Title</h3>
+          <p>Godzilla</p>
+        </div>
       </li>
       <li>
         <img src="img/0.jpg" alt="Godzilla">
-        <h3>Movie Title</h3>
-        <p>Godzilla</p>
+        <div>
+          <h3>Movie Title</h3>
+          <p>Godzilla</p>
+        </div>
       </li>
       <li>
         <img src="img/0.jpg" alt="Godzilla">
-        <h3>Movie Title</h3>
-        <p>Godzilla</p>
+        <div>
+          <h3>Movie Title</h3>
+          <p>Godzilla</p>
+        </div>
       </li>
       <li>
         <img src="img/0.jpg" alt="Godzilla">
-        <h3>Movie Title</h3>
-        <p>Godzilla</p>
+        <div>
+          <h3>Movie Title</h3>
+          <p>Godzilla</p>
+        </div>
       </li>
     </ul>
   </section>
   <footer>
     <p>DWS2 Demo</p>
   </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>

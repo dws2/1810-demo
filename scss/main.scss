@@ -2,53 +2,14 @@
 @import "reset";
 @import "mixins";
 @import "placeholders";
+@import "base";
 
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-.navlist {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  li {
-    padding: 0 0.5rem;
-  }
-  a {
-    color: $brand;
-    text-decoration: none;
+// Component Imports
+@import "components/nav";
+@import "components/search";
 
-    &:hover {
-      color: #4c7deb;
-    }
-  }
-}
-
-form {
-  margin: 3rem auto;
-  width: 400px;
-
-  label,
-  input {
-    display: block;
-  }
-
-  label {
-    background-color: #333;
-    color: #fff;
-    padding: 0.5rem;
-  }
-  input {
-    width: 100%;
-  }
-
-  button {
-    display: block;
-    background-color: $brand;
-    color: #fff;
-    border: none;
-    font-size: 1rem;
-  }
+section {
+  padding: 0 1rem;
 }
 
 .results {
@@ -56,6 +17,34 @@ form {
   padding: 0;
   margin: 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 1rem;
+
+  @media (min-width: 400px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 700px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  div {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+  }
+  h3 {
+    color: $brand;
+  }
+
+  li {
+    display: grid;
+    grid-template-columns: 1fr;
+    @media (min-width: 700px) {
+      grid-template-columns: 100px 1fr;
+    }
+  }
+}
+
+footer {
+  text-align: center;
 }

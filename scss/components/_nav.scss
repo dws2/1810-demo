@@ -1,0 +1,66 @@
+nav {
+  background-color: #333;
+  color: #fff;
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  &.nav-open {
+    .navlist {
+      display: block;
+    }
+    .nav-toggle {
+      background-color: $brand;
+    }
+  }
+
+  @media (min-width: 400px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-toggle {
+      display: none;
+    }
+  }
+}
+.navlist {
+  list-style: none;
+  padding: 0;
+  display: none;
+
+  @media (min-width: 400px) {
+    display: flex;
+    li {
+      padding: 0 0.5rem;
+    }
+  }
+  a {
+    color: $brand;
+    text-decoration: none;
+
+    &:hover {
+      color: #4c7deb;
+    }
+  }
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-toggle {
+  border: none;
+  background-color: transparent;
+  background-image: url(../img/cinema.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-indent: -9999px;
+  width: 2rem;
+  height: 2rem;
+
+  &:hover {
+    background-color: #4c7deb;
+  }
+}

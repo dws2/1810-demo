@@ -35,16 +35,44 @@ section {
   h3 {
     color: $brand;
   }
+  p {
+    max-height: 2em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 
   li {
     display: grid;
     grid-template-columns: 1fr;
     @media (min-width: 700px) {
-      grid-template-columns: 100px 1fr;
+      grid-template-columns: 120px 1fr;
     }
   }
 }
 
 footer {
   text-align: center;
+}
+
+.modal-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: hsla(0, 0, 0, 0.25);
+
+  &.open {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.modal {
+  background-color: #fff;
+  color: #000;
+  width: 500px;
+  height: 500px;
 }
